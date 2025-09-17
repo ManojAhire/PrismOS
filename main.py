@@ -38,6 +38,10 @@ class Device:
 
 
 
+# (in main.py)
+
+# ... (previous code) ...
+
 CHIP_MIN_VER = {
     0x8103: "11.0",     # T8103, M1
     0x6000: "12.0",     # T6000, M1 Pro
@@ -49,7 +53,9 @@ CHIP_MIN_VER = {
     0x6022: "13.4",     # T6022, M2 Ultra
     0x6030: "14.1",     # T6030, M3 Pro
     0x8122: "14.0",     # T8122, M3 Family
-    0x8132: "14.5",     # T8132, M4 Family (estimated)
+    0x8132: "15.0",     # T8132, M4
+    0x6040: "15.0",     # T6040, M4 Pro
+    0x6041: "15.0",     # T6041, M4 Max
 }
 
 DEVICES = {
@@ -76,12 +82,24 @@ DEVICES = {
     "j475cap":  Device("13.4", False),  # Mac Studio (M2 Max, 2023)
     "j475dap":  Device("13.4", False),  # Mac Studio (M2 Ultra, 2023)
     "j180dap":  Device("13.4", True),   # Mac Pro (M2 Ultra, 2023)
+    # M3 Devices
     "j514sap":  Device("14.1", False),  # MacBook Pro (14-inch, M3 Pro, 2023)
     "j514cap":  Device("14.1", False),  # MacBook Pro (14-inch, M3 Max, 2023)
     "j516sap":  Device("14.1", False),  # MacBook Pro (16-inch, M3 Pro, 2023)
     "j516cap":  Device("14.1", False),  # MacBook Pro (16-inch, M3 Max, 2023)
     "j513ap":   Device("14.1", False),  # MacBook Pro (14-inch, M3, 2023)
     "j504ap":   Device("14.1", False),  # iMac (24-inch, M3, 2023)
+    "Mac15,12": Device("14.3", False),  # MacBook Air (13-inch, M3, 2024)
+    "Mac15,13": Device("14.3", False),  # MacBook Air (15-inch, M3, 2024)
+    # M4 devices
+    "Mac16,12": Device("15.0", False),  # MacBook Air (13-inch, M4, 2025)
+    "Mac16,13": Device("15.0", False),  # MacBook Air (15-inch, M4, 2025)
+    "Mac16,14": Device("15.0", False),  # MacBook Pro (14-inch, M4, 2024)
+    "Mac16,15": Device("15.0", False),  # MacBook Pro (14-inch, M4 Pro/Max, 2024)
+    "Mac16,16": Device("15.0", False),  # MacBook Pro (16-inch, M4 Pro/Max, 2024)
+    "Mac16,18": Device("15.0", False),  # iMac (24-inch, M4, 2024, 2-port)
+    "Mac16,19": Device("15.0", False),  # iMac (24-inch, M4, 2024, 4-port)
+    "Mac16,20": Device("15.0", False),  # Mac mini (M4/M4 Pro, 2024)
 }
 
 
