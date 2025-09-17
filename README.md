@@ -158,27 +158,4 @@ To create a seamless and high-performance multi-boot environment on Apple Silico
 
 ## **Visual Project Timeline (Gantt Chart)**
 
-```mermaid
-gantt
-    title PrismOS Development Timeline
-    dateFormat  YYYY-MM-DD
-    axisFormat %Y-%m
-    section Phase 1: Foundation
-    Research & RE             :milestone, p1_m1, 2025-09-18, 2m
-    Kernel Port & Bootloader  :p1_m2, after p1_m1, 4m
-    Essential Drivers         :p1_m3, after p1_m2, 3m
-    Kali Linux Alpha Release  :milestone, p1_m4, after p1_m3, 1d
-
-    section Phase 2: Hardware Enablement
-    GPU & Graphics Stack      :crit, p2_m1, after p1_m3, 9m
-    Connectivity & Wireless   :p2_m2, after p1_m3, 4m
-    Audio & Power Mgmt        :p2_m3, after p2_m2, 5m
-    Peripherals & HIDs        :p2_m4, after p2_m3, 4m
-    Public Beta Release       :milestone, p2_m5, after p2_m1, 1d
-
-    section Phase 3: Janus Middleware
-    HAL Architecture Design   :p3_m1, after p2_m1, 4m
-    Windows on ARM PoC        :crit, p3_m2, after p3_m1, 12m
-    Generalization & Docs     :p3_m3, after p3_m2, 6m
-    Multi-OS Tech Preview     :milestone, p3_m4, after p3_m3, 1d
-```
+<img width="2379" height="1579" alt="timeline" src="https://github.com/user-attachments/assets/ab644699-7624-4d6d-874c-d9c77581203f" />
