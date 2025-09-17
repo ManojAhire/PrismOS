@@ -1,6 +1,12 @@
 # PrismOS Installer
 
-![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-M1%2C%20M2%2C%20M3%2C%20M4-black)
+<p align="center">
+   <a href="https://github.com/AryanVBw">
+<img src="/logo.png" height="250" alt="PrismOS"></a></p>
+
+
+
+
 
 The PrismOS Installer is a community-driven project that extends the groundbreaking work of **Asahi Linux** to bring full-featured Linux distributions to the very latest Apple Silicon hardware, including the M1, M2, M3, and M4 families.
 
