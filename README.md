@@ -65,32 +65,32 @@ To create a seamless and high-performance multi-boot environment on Apple Silico
 
   * **Epic 1.1: Environment Setup & Reverse Engineering**
 
-      * `[ ]` Establish a dedicated build and development environment.
-      * `[ ]` Deep analysis of Apple's boot process (Boot ROM, LLB, iBoot).
-      * `[ ]` In-depth reverse engineering of Apple Silicon's proprietary hardware interfaces, building on the work of the Asahi Linux project.
-      * `[ ]` Document the memory-mapped I/O (MMIO) registers for core components.
+      * [ ] Establish a dedicated build and development environment.
+      * [ ] Deep analysis of Apple's boot process (Boot ROM, LLB, iBoot).
+      * [ ] In-depth reverse engineering of Apple Silicon's proprietary hardware interfaces, building on the work of the Asahi Linux project.
+      * [ ] Document the memory-mapped I/O (MMIO) registers for core components.
 
   * **Epic 1.2: Custom Bootloader & Kernel Port**
 
-      * `[ ]` Develop a custom bootloader (`m1n1` stage) capable of initializing the hardware.
-      * `[ ]` Fork the Linux kernel and begin porting efforts for the M-series SoC.
-      * `[ ]` Implement the initial Apple Interrupt Controller (AIC) driver.
-      * `[ ]` Develop basic PCIe support for internal device communication.
-      * `[ ]` Create a minimal, bootable Debian `debootstrap` image with a custom kernel.
+      * [ ] Develop a custom bootloader (`m1n1` stage) capable of initializing the hardware.
+      * [ ] Fork the Linux kernel and begin porting efforts for the M-series SoC.
+      * [ ] Implement the initial Apple Interrupt Controller (AIC) driver.
+      * [ ] Develop basic PCIe support for internal device communication.
+      * [ ] Create a minimal, bootable Debian `debootstrap` image with a custom kernel.
 
   * **Epic 1.3: Essential Driver Implementation**
 
-      * `[ ]` Implement a basic framebuffer driver for native display output (no acceleration).
-      * `[ ]` Develop a driver for NVMe storage to access the internal SSD.
-      * `[ ]` Enable USB-C / Thunderbolt controllers for basic keyboard, mouse, and external device support.
-      * `[ ]` Ensure stable multi-core CPU support (SMP) with correct power management states.
+      * [ ] Implement a basic framebuffer driver for native display output (no acceleration).
+      * [ ] Develop a driver for NVMe storage to access the internal SSD.
+      * [ ] Enable USB-C / Thunderbolt controllers for basic keyboard, mouse, and external device support.
+      * [ ] Ensure stable multi-core CPU support (SMP) with correct power management states.
 
   * **Epic 1.4: Kali Linux Integration**
 
-      * `[ ]` Create a dedicated PrismOS repository to host the custom kernel and drivers.
-      * `[ ]` Build a custom Kali Linux ARM64 image that integrates the PrismOS kernel and packages.
-      * `[ ]` Test and validate core Kali toolchains (Metasploit, Nmap, Wireshark, etc.) on the new platform.
-      * `[ ]` Release an initial "Developer Alpha" of Kali Linux for PrismOS.
+      * [ ] Create a dedicated PrismOS repository to host the custom kernel and drivers.
+      * [ ] Build a custom Kali Linux ARM64 image that integrates the PrismOS kernel and packages.
+      * [ ] Test and validate core Kali toolchains (Metasploit, Nmap, Wireshark, etc.) on the new platform.
+      * [ ] Release an initial "Developer Alpha" of Kali Linux for PrismOS.
 
 -----
 
@@ -100,36 +100,36 @@ To create a seamless and high-performance multi-boot environment on Apple Silico
 
   * **Epic 2.1: Graphics & Display Subsystem**
 
-      * `[ ]` Reverse engineer the Apple AGX GPU architecture.
-      * `[ ]` Develop a custom DRM/KMS (Direct Rendering Manager / Kernel Mode Setting) driver.
-      * `[ ]` Write a Mesa Gallium3D driver for OpenGL 3.3+ and Vulkan 1.2+ hardware acceleration.
-      * `[ ]` Implement support for display brightness control and multi-monitor output.
+      * [ ] Reverse engineer the Apple AGX GPU architecture.
+      * [ ] Develop a custom DRM/KMS (Direct Rendering Manager / Kernel Mode Setting) driver.
+      * [ ] Write a Mesa Gallium3D driver for OpenGL 3.3+ and Vulkan 1.2+ hardware acceleration.
+      * [ ] Implement support for display brightness control and multi-monitor output.
 
   * **Epic 2.2: Connectivity & Wireless**
 
-      * `[ ]` Reverse engineer and develop drivers for the Broadcom "FullMAC" Wi-Fi and Bluetooth chipsets.
-      * `[ ]` Extract and manage the necessary firmware blobs.
-      * `[ ]` Ensure stable, high-performance networking and seamless Bluetooth device pairing.
+      * [ ] Reverse engineer and develop drivers for the Broadcom "FullMAC" Wi-Fi and Bluetooth chipsets.
+      * [ ] Extract and manage the necessary firmware blobs.
+      * [ ] Ensure stable, high-performance networking and seamless Bluetooth device pairing.
 
   * **Epic 2.3: Human Interface Devices (HID) & Peripherals**
 
-      * `[ ]` Develop drivers for the built-in keyboard and trackpad (using SPI).
-      * `[ ]` Implement full support for the Touch Bar and ambient light sensor.
-      * `[ ]` **[Stretch Goal]** Investigate secure access to the Touch ID sensor via the Secure Enclave (requires significant security research).
-      * `[ ]` Develop drivers for the webcam (ISP - Image Signal Processor) and microphones.
+      * [ ] Develop drivers for the built-in keyboard and trackpad (using SPI).
+      * [ ] Implement full support for the Touch Bar and ambient light sensor.
+      * [ ] **[Stretch Goal]** Investigate secure access to the Touch ID sensor via the Secure Enclave (requires significant security research).
+      * [ ] Develop drivers for the webcam (ISP - Image Signal Processor) and microphones.
 
   * **Epic 2.4: Audio & Power Management**
 
-      * `[ ]` Reverse engineer the custom audio DSPs and speaker amplifiers.
-      * `[ ]` Write a full ALSA (Advanced Linux Sound Architecture) driver for speakers and microphones.
-      * `[ ]` Implement advanced power management: CPU frequency scaling, sleep/wake functionality, and accurate battery life reporting.
+      * [ ] Reverse engineer the custom audio DSPs and speaker amplifiers.
+      * [ ] Write a full ALSA (Advanced Linux Sound Architecture) driver for speakers and microphones.
+      * [ ] Implement advanced power management: CPU frequency scaling, sleep/wake functionality, and accurate battery life reporting.
 
   * **Epic 2.5: System Polishing & Installer**
 
-      * `[ ]` Develop a user-friendly, dual-boot installer that can resize APFS containers safely.
-      * `[ ]` Create a "Hardware Control Center" for managing Mac-specific features.
-      * `[ ]` Establish a continuous integration (CI/CD) pipeline for kernel and driver builds.
-      * `[ ]` Launch a "Public Beta" program to gather widespread feedback and bug reports.
+      * [ ] Develop a user-friendly, dual-boot installer that can resize APFS containers safely.
+      * [ ] Create a "Hardware Control Center" for managing Mac-specific features.
+      * [ ] Establish a continuous integration (CI/CD) pipeline for kernel and driver builds.
+      * [ ] Launch a "Public Beta" program to gather widespread feedback and bug reports.
 
 -----
 
@@ -139,22 +139,22 @@ To create a seamless and high-performance multi-boot environment on Apple Silico
 
   * **Epic 3.1: Janus HAL Architecture & Design**
 
-      * `[ ]` Define the Janus Hardware Abstraction Layer (HAL) API specifications. This API will expose standardized interfaces for GPU, Storage, Networking, etc.
-      * `[ ]` Design the translation architecture. This will be a "shim" that sits between a guest OS kernel and the PrismOS host kernel.
-      * `[ ]` Research existing paradigms (e.g., WSL2's Hyper-V approach, Android's HAL) for inspiration.
+      * [ ] Define the Janus Hardware Abstraction Layer (HAL) API specifications. This API will expose standardized interfaces for GPU, Storage, Networking, etc.
+      * [ ] Design the translation architecture. This will be a "shim" that sits between a guest OS kernel and the PrismOS host kernel.
+      * [ ] Research existing paradigms (e.g., WSL2's Hyper-V approach, Android's HAL) for inspiration.
 
   * **Epic 3.2: Windows on ARM (WoA) Proof of Concept**
 
-      * `[ ]` Develop a para-virtualized "Janus ACPI" driver to translate Windows power management and device discovery calls.
-      * `[ ]` Create a "Janus StorPort Miniport" driver that maps Windows storage requests to the PrismOS NVMe driver.
-      * `[ ]` Write a "Janus WDDM" (Windows Display Driver Model) graphics driver that translates DirectX/D3D calls into Vulkan calls for the native GPU driver.
-      * `[ ]` Achieve a successful boot of the Windows on ARM kernel in a lightweight virtualized environment using the Janus HAL.
+      * [ ] Develop a para-virtualized "Janus ACPI" driver to translate Windows power management and device discovery calls.
+      * [ ] Create a "Janus StorPort Miniport" driver that maps Windows storage requests to the PrismOS NVMe driver.
+      * [ ] Write a "Janus WDDM" (Windows Display Driver Model) graphics driver that translates DirectX/D3D calls into Vulkan calls for the native GPU driver.
+      * [ ] Achieve a successful boot of the Windows on ARM kernel in a lightweight virtualized environment using the Janus HAL.
 
   * **Epic 3.3: Generalizing Janus for Other OSes**
 
-      * `[ ]` Document the Janus HAL for other open-source developers.
-      * `[ ]` Develop a reference "VirtIO-Janus" backend to allow any standard VirtIO-compliant OS to leverage the hardware acceleration provided by Janus.
-      * `[ ]` Explore support for other ARM-based OSes (e.g., FreeBSD, other Linux distributions) through the standardized interface.
+      * [ ] Document the Janus HAL for other open-source developers.
+      * [ ] Develop a reference "VirtIO-Janus" backend to allow any standard VirtIO-compliant OS to leverage the hardware acceleration provided by Janus.
+      * [ ] Explore support for other ARM-based OSes (e.g., FreeBSD, other Linux distributions) through the standardized interface.
 
 ## **Visual Project Timeline (Gantt Chart)**
 
